@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Meny</title>
+
+  <style>
+    table{
+      width: 70%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Food Menu</h1>
+  <table border="5">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Breakfast</th>
+        <th>Lunch</th>
+        <th>Dinner</th>
+      </tr>
+    </thead>
+
+   <!-- tbody(tr>th+td*3) *7 -->
+    <tbody>
+      <tr>
+        <th>Monday</th>
+        <td rowspan="3">Tea</td>
+        <td>Rice</td>
+        <td>Beans</td>
+      </tr>
+
+      <tr>
+        <th>Tuesday</th>
+        <!-- <td>Tea</td> -->
+        <td>Beans</td>
+        <td>Rice</td>
+      </tr>
+
+      <tr>
+        <th>Wednesday</th>
+        <!-- <td>Tea</td> -->
+        <td>Tea</td>
+        <td>Tea</td>
+      </tr>
+
+      <tr>
+        <th>Thursday</th>
+        <td colspan="3">Rice</td>
+        <!-- <td>Rice</td>
+        <td>Rice</td> -->
+      </tr>
+
+      <tr>
+        <th>Friday</th>
+        <td colspan="3">Tea</td>
+        <!-- <td>Tea</td>
+        <td>Tea</td> -->
+      </tr>
+
+      <tr>
+        <th>Saturday</th>
+        <td colspan="3">Tea</td>
+        <!-- <td>Tea</td>
+        <td>Tea</td> -->
+      </tr>
+
+      <tr>
+        <th>Sunday</th>
+        <td>Rice</td>
+        <td>Rice</td>
+        <td>Rice</td>
+      </tr>
+    </tbody>
+
+    
+    <tfoot>
+<tr style="text-align: center;">
+  <!-- the colspan was used so that it will occupy the four columns -->
+  <td colspan="4">Christmas Menu From <time datetime="2023-11-23"> 23rd Nov 2023</time>
+     to <time datetime="2024-01-12"> 12th January 2024</time></td>
+</tr>
+ </tfoot>
+  </table>
+
+</body>
+</html>
